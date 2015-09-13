@@ -31,18 +31,23 @@ class BookController extends Controller {
         $request = Yii::app()->request;
         try {
             $book_id = StringHelper::filterString($request->getPut('book_id'));
-            $book_name = StringHelper::filterString($request->getPut('book_name'));
-            $book_author = StringHelper::filterString($request->getPut('book_author'));
-            $book_year = StringHelper::filterString($request->getPut('book_year'));
-            $book_publisher = StringHelper::filterString($request->getPut('book_publisher'));
-            $book_image = NULL;
-            if (isset($_FILES['book_image'])) {
-                $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
-            }
-            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image)) {
-                ResponseHelper::JsonReturnSuccess("", "Success");
+            $model = Books::model()->findByAttributes(array('id' => $book_id));
+            if ($model) {
+                $book_name = StringHelper::filterString($request->getPut('book_name'), $model->book_name);
+                $book_author = StringHelper::filterString($request->getPut('book_author'), $model->book_author);
+                $book_year = StringHelper::filterString($request->getPut('book_year'), $model->book_year);
+                $book_publisher = StringHelper::filterString($request->getPut('book_publisher'), $model->book_publisher);
+                $book_image = NULL;
+                if (isset($_FILES['book_image'])) {
+                    $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
+                }
+                if (Books::model()->updateBook($model, $book_name, $book_author, $book_year, $book_publisher, $book_image)) {
+                    ResponseHelper::JsonReturnSuccess("", "Success");
+                } else {
+                    ResponseHelper::JsonReturnError("", "Server Error");
+                }
             } else {
-                ResponseHelper::JsonReturnError("", "Server Error");
+                ResponseHelper::JsonReturnError("", "Book not exist");
             }
         } catch (Exception $ex) {
             var_dump($ex->getMessage());

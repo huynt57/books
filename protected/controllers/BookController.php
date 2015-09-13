@@ -40,7 +40,7 @@ class BookController extends Controller {
             $book_image = NULL;
             if (isset($_FILES['book_image'])) {
                 $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
-            } 
+            }
             if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
                 ResponseHelper::JsonReturnSuccess("", "Success");
             } else {
@@ -72,6 +72,19 @@ class BookController extends Controller {
             $limit = $request->getQuery('limit');
             $offset = $request->getQuery('offset');
             $data = Books::model()->listBookWithLimitOffset($limit, $offset);
+            ResponseHelper::JsonReturnSuccess($data, "Success");
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
+
+    public function actionSearch() {
+        $request = Yii::app()->request;
+        try {
+            $query = $request->getQuery('query');
+            $limit = $request->getQuery('limit');
+            $offset = $request->getQuery('offset');
+            $data = Books::model()->searchBooks($query, $limit, $offset);
             ResponseHelper::JsonReturnSuccess($data, "Success");
         } catch (Exception $ex) {
             var_dump($ex->getMessage());

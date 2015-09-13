@@ -12,6 +12,7 @@ class Books extends BaseBooks {
         $criteria = new CDbCriteria;
         $criteria->limit = $limit;
         $criteria->offset = $offset;
+        $criteria->order = 'id DESC';
         $result = Books::model()->findAll($criteria);
         return $result;
     }
@@ -64,6 +65,60 @@ class Books extends BaseBooks {
         } else {
             return FALSE;
         }
+    }
+
+    public function searchBooks($query, $limit, $offset) {
+        $result_by_name = $this->searchByName($query, $limit, $offset);
+        $result_by_author = $this->searchByAuthor($query, $limit, $offset);
+        $result_by_pub = $this->searchByPublisher($query, $limit, $offset);
+        $result_by_des = $this->searchByDescription($query, $limit, $offset);
+        $result_by_year = $this->searchByYear($query, $limit, $offset);
+        return array('result_by_name' => $result_by_name, 'result_by_author' => $result_by_author, 'result_by_pub' => $result_by_pub, 'result_by_des' => $result_by_des, 'result_by_year' => $result_by_year);
+    }
+
+    public function searchByName($query, $limit, $offset) {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+        $criteria->addSearchCondition('book_name', $query);
+        $result = Books::model()->findAll($criteria);
+        return $result;
+    }
+
+    public function searchByAuthor($query, $limit, $offset) {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+        $criteria->addSearchCondition('book_author', $query);
+        $result = Books::model()->findAll($criteria);
+        return $result;
+    }
+
+    public function searchByPublisher($query, $limit, $offset) {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+        $criteria->addSearchCondition('book_publisher', $query);
+        $result = Books::model()->findAll($criteria);
+        return $result;
+    }
+
+    public function searchByDescription($query, $limit, $offset) {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+        $criteria->addSearchCondition('book_description', $query);
+        $result = Books::model()->findAll($criteria);
+        return $result;
+    }
+
+    public function searchByYear($query, $limit, $offset) {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+        $criteria->addSearchCondition('book_year', $query);
+        $result = Books::model()->findAll($criteria);
+        return $result;
     }
 
 }

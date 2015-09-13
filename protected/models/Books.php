@@ -33,15 +33,26 @@ class Books extends BaseBooks {
         }
     }
 
-    public function updateBook($model, $book_name, $book_author, $book_year, $book_publisher, $book_image) {
+    public function updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image) {
+        $model = Books::model()->findByAttributes(array('id' => $book_id));
         if ($model) {
-            $model->book_name = $book_name;
-            $model->book_author = $book_author;
-            $model->book_year = $book_year;
-            $model->book_publisher = $book_publisher;
-            $model->book_image = $book_image;
+            if (!empty($book_name)) {
+                $model->book_name = $book_name;
+            }
+            if (!empty($book_author)) {
+                $model->book_author = $book_author;
+            }
+            if (!empty($book_year)) {
+                $model->book_year = $book_year;
+            }
+            if (!empty($book_publisher)) {
+                $model->book_publisher = $book_publisher;
+            }
+            if (!empty($book_image)) {
+                $model->book_image = $book_image;
+            }
             $model->updated_at = time();
-            if ($model->save(FALSE)) {
+            if ($model->save()) {
                 return TRUE;
             } else {
                 return FALSE;

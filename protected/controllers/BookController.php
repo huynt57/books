@@ -13,11 +13,12 @@ class BookController extends Controller {
             $book_author = StringHelper::filterString($request->getPost('book_author'));
             $book_year = StringHelper::filterString($request->getPost('book_year'));
             $book_publisher = StringHelper::filterString($request->getPost('book_publisher'));
+            $book_description = StringHelper::filterString($request->getPost('book_description'));
             $book_image = NULL;
             if (isset($_FILES['book_image'])) {
                 $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
             }
-            if (Books::model()->addBook($book_name, $book_author, $book_year, $book_publisher, $book_image)) {
+            if (Books::model()->addBook($book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
                 ResponseHelper::JsonReturnSuccess("", "Success");
             } else {
                 ResponseHelper::JsonReturnError("", "Server Error");
@@ -35,11 +36,12 @@ class BookController extends Controller {
             $book_author = StringHelper::filterString($request->getPut('book_author'));
             $book_year = StringHelper::filterString($request->getPut('book_year'));
             $book_publisher = StringHelper::filterString($request->getPut('book_publisher'));
+            $book_description = StringHelper::filterString($request->getPut('book_description'));
             $book_image = NULL;
             if (isset($_FILES['book_image'])) {
                 $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
             } 
-            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image)) {
+            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
                 ResponseHelper::JsonReturnSuccess("", "Success");
             } else {
                 ResponseHelper::JsonReturnError("", "Server Error");

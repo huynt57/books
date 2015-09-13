@@ -18,6 +18,7 @@
  * @property integer $updated_at
  * @property integer $book_year
  * @property integer $status
+ * @property string $book_description
  *
  */
 abstract class BaseBooks extends GxActiveRecord {
@@ -42,8 +43,9 @@ abstract class BaseBooks extends GxActiveRecord {
 		return array(
 			array('created_at, updated_at, book_year, status', 'numerical', 'integerOnly'=>true),
 			array('book_image, book_name, book_author, book_publisher', 'length', 'max'=>255),
-			array('book_image, book_name, book_author, book_publisher, created_at, updated_at, book_year, status', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('id, book_image, book_name, book_author, book_publisher, created_at, updated_at, book_year, status', 'safe', 'on'=>'search'),
+			array('book_description', 'safe'),
+			array('book_image, book_name, book_author, book_publisher, created_at, updated_at, book_year, status, book_description', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('id, book_image, book_name, book_author, book_publisher, created_at, updated_at, book_year, status, book_description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,6 +70,7 @@ abstract class BaseBooks extends GxActiveRecord {
 			'updated_at' => Yii::t('app', 'Updated At'),
 			'book_year' => Yii::t('app', 'Book Year'),
 			'status' => Yii::t('app', 'Status'),
+			'book_description' => Yii::t('app', 'Book Description'),
 		);
 	}
 
@@ -83,6 +86,7 @@ abstract class BaseBooks extends GxActiveRecord {
 		$criteria->compare('updated_at', $this->updated_at);
 		$criteria->compare('book_year', $this->book_year);
 		$criteria->compare('status', $this->status);
+		$criteria->compare('book_description', $this->book_description, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

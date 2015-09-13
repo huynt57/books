@@ -16,7 +16,7 @@ class Books extends BaseBooks {
         return $result;
     }
 
-    public function addBook($book_name, $book_author, $book_year, $book_publisher, $book_image) {
+    public function addBook($book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description) {
         $model = new Books;
         $model->book_name = $book_name;
         $model->book_author = $book_author;
@@ -26,6 +26,7 @@ class Books extends BaseBooks {
         $model->created_at = time();
         $model->updated_at = time();
         $model->status = 1;
+        $model->book_description = $book_description;
         if ($model->save(FALSE)) {
             return TRUE;
         } else {
@@ -33,7 +34,7 @@ class Books extends BaseBooks {
         }
     }
 
-    public function updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image) {
+    public function updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description) {
         $model = Books::model()->findByAttributes(array('id' => $book_id));
         if ($model) {
             if (!empty($book_name)) {
@@ -50,6 +51,9 @@ class Books extends BaseBooks {
             }
             if (!empty($book_image)) {
                 $model->book_image = $book_image;
+            }
+            if (!empty($book_description)) {
+                $model->book_description = $book_description;
             }
             $model->updated_at = time();
             if ($model->save()) {

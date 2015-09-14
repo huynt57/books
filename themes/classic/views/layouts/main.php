@@ -70,8 +70,6 @@
     <body>
 
         <!-- BEGIN -->
-
-
         <div class="container">
             <?php echo $content; ?>
             <div class="clear"></div>

@@ -44,7 +44,16 @@
                                 <td><?php echo $book->book_publisher ?></td>
                                 <td><?php echo $book->book_year ?></td>
                                 <td><?php echo $book->book_description ?></td>
-                                <td class='hidden-350'><span class="label label-satgreen"><?php echo $book->status ?></span></td>
+                                <td class='hidden-350'>
+                                    <?php if($book->status == 1):?>
+                                    <span class="label label-satgreen"> Active
+                                    </span>
+                                    <?php endif;?>
+                                    <?php if($book->status != 1):?>
+                                    <span class="label label-red"> Inactive
+                                    </span>
+                                    <?php endif;?>
+                                </td>
                                 <td class='hidden-480'>
                                     <a href="#" class="btn" rel="tooltip" title="View"><i class="icon-search"></i></a>
                                     <a href="#" class="btn" rel="tooltip" title="Edit"><i class="icon-edit"></i></a>

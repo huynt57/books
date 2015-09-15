@@ -3,7 +3,8 @@
 class BookController extends Controller {
 
     public function actionIndex() {
-        $this->render('index');
+        $data = Books::model()->getBooksForWeb();
+        $this->render('index', array('books' => $data));
     }
 
     public function actionAdd() {
@@ -90,8 +91,6 @@ class BookController extends Controller {
             var_dump($ex->getMessage());
         }
     }
-    
-    
 
     // Uncomment the following methods and override them if needed
     /*

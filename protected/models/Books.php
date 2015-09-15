@@ -7,6 +7,12 @@ class Books extends BaseBooks {
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
+    
+    public function getBooksForWeb()
+    {
+        $data = Books::model()->findAll();
+        return $data;
+    }
 
     public function listBookWithLimitOffset($limit, $offset) {
         $criteria = new CDbCriteria;

@@ -10,7 +10,10 @@ class Books extends BaseBooks {
     
     public function getBooksForWeb()
     {
-        $data = Books::model()->findAll();
+        $criteria = new CDbCriteria;
+        $criteria->select = "*";
+        $criteria->order = "id ASC";        
+        $data = Books::model()->findAll($criteria);
         return $data;
     }
 
@@ -125,6 +128,12 @@ class Books extends BaseBooks {
         $criteria->addSearchCondition('book_year', $query);
         $result = Books::model()->findAll($criteria);
         return $result;
+    }
+    
+    public function detailBook($book_id)
+    {
+        $data = Books::model()->findByAttributes(array('id' => $book_id));
+        return $data;
     }
 
 }

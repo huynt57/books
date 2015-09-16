@@ -59,6 +59,7 @@
 	<script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/application.min.js"></script>
 	<!-- Just for demonstration -->
 	<script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/demonstration.min.js"></script>
+         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/angular.js"></script>
    
 
         <title>Quản lý sách thư viện</title>

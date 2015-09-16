@@ -29,6 +29,17 @@ class BookController extends Controller {
         }
     }
 
+    public function actionDetailBook() {
+        $request = Yii::app()->request;
+        try {
+            $book_id = StringHelper::filterString($request->getPost('book_id'));
+            $data = Books::model()->detailBook($book_id);
+            ResponseHelper::JsonReturnSuccess($data, "Success");
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
+
     public function actionUpdate() {
         $request = Yii::app()->request;
         try {
@@ -46,6 +57,29 @@ class BookController extends Controller {
                 ResponseHelper::JsonReturnSuccess("", "Success");
             } else {
                 ResponseHelper::JsonReturnError("", "Server Error");
+            }
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
+    
+    public function actionEdit() {
+        $request = Yii::app()->request;
+        try {
+            $book_id = StringHelper::filterString($request->getPost('book_id'));
+            $book_name = StringHelper::filterString($request->getPost('book_name'));
+            $book_author = StringHelper::filterString($request->getPost('book_author'));
+            $book_year = StringHelper::filterString($request->getPost('book_year'));
+            $book_publisher = StringHelper::filterString($request->getPost('book_publisher'));
+            $book_description = StringHelper::filterString($request->getPost('book_description'));
+            $book_image = NULL;
+            if (isset($_FILES['book_image'])) {
+                $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
+            }
+            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
+                $this->redirect(Yii::app()->createUrl('book/index'));
+            } else {
+                $this->redirect(Yii::app()->createUrl('book/index'));
             }
         } catch (Exception $ex) {
             var_dump($ex->getMessage());

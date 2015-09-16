@@ -42,8 +42,10 @@ class BookController extends Controller {
                 $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
             }
             if (Books::model()->addBook($book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
+                Yii::app()->user->setFlash('message_ss', "Added !!!");
                 $this->redirect(Yii::app()->createUrl('book/index'));
             } else {
+                Yii::app()->user->setFlash('message_err', "Server Error :(");
                 $this->redirect(Yii::app()->createUrl('book/index'));
             }
         } catch (Exception $ex) {
@@ -99,8 +101,10 @@ class BookController extends Controller {
                 $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
             }
             if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
+                Yii::app()->user->setFlash('message_ss', "Update Success");
                 $this->redirect(Yii::app()->createUrl('book/index'));
             } else {
+                Yii::app()->user->setFlash('message_err', "Server Error :(");
                 $this->redirect(Yii::app()->createUrl('book/index'));
             }
         } catch (Exception $ex) {
@@ -129,8 +133,10 @@ class BookController extends Controller {
             $book_id = $request->getQuery('book_id');
             $model = Books::model()->findByAttributes(array('id' => $book_id));
             if ($model->delete()) {
+                Yii::app()->user->setFlash('message_ss', "Delete success !!");
                 $this->redirect(Yii::app()->createUrl('book/index'));
             } else {
+                Yii::app()->user->setFlash('message_err', "Server Error :(");
                 $this->redirect(Yii::app()->createUrl('book/index'));
             }
         } catch (Exception $ex) {

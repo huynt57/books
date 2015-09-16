@@ -29,6 +29,28 @@ class BookController extends Controller {
         }
     }
 
+    public function actionAddForWeb() {
+        $request = Yii::app()->request;
+        try {
+            $book_name = StringHelper::filterString($request->getPost('book_name'));
+            $book_author = StringHelper::filterString($request->getPost('book_author'));
+            $book_year = StringHelper::filterString($request->getPost('book_year'));
+            $book_publisher = StringHelper::filterString($request->getPost('book_publisher'));
+            $book_description = StringHelper::filterString($request->getPost('book_description'));
+            $book_image = NULL;
+            if (isset($_FILES['book_image'])) {
+                $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
+            }
+            if (Books::model()->addBook($book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
+                $this->redirect(Yii::app()->createUrl('book/index'));
+            } else {
+                $this->redirect(Yii::app()->createUrl('book/index'));
+            }
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
+
     public function actionDetailBook() {
         $request = Yii::app()->request;
         try {
@@ -62,7 +84,7 @@ class BookController extends Controller {
             var_dump($ex->getMessage());
         }
     }
-    
+
     public function actionEdit() {
         $request = Yii::app()->request;
         try {
@@ -95,6 +117,21 @@ class BookController extends Controller {
                 ResponseHelper::JsonReturnSuccess("", "Success");
             } else {
                 ResponseHelper::JsonReturnError("", "Server Error");
+            }
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
+
+    public function actionDeleteForWeb() {
+        $request = Yii::app()->request;
+        try {
+            $book_id = $request->getQuery('book_id');
+            $model = Books::model()->findByAttributes(array('id' => $book_id));
+            if ($model->delete()) {
+                $this->redirect(Yii::app()->createUrl('book/index'));
+            } else {
+                $this->redirect(Yii::app()->createUrl('book/index'));
             }
         } catch (Exception $ex) {
             var_dump($ex->getMessage());

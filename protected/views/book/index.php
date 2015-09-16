@@ -3,7 +3,7 @@
         <h3>Book Management</h3>
         <div class="box box-color box-bordered">
 
-            <button class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px">Add book</button>
+            <a href="#modal-add" role="button" data-toggle="modal" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px">Add book</a>
             <div class="box-content nopadding" ng-app="" ng-controller="BookController">
 
                 <table class="table table-hover table-nomargin table-bordered dataTable">
@@ -42,7 +42,7 @@
                                 </td>-->
                                 <td><?php echo $book->id ?></td>
                                 <td><?php echo $book->book_name ?></td>
-                                <td><img src="<?php echo $book->book_image ?>" height="100" width="100" /></td>
+                                <td><img src="<?php echo Yii::app()->BaseUrl.'/'.$book->book_image ?>" height="100" width="100" /></td>
     <!--                                <td><?php //echo $book->book_author    ?></td>
                                 <td><?php //echo $book->book_publisher    ?></td>
                                 <td><?php //echo $book->book_year    ?></td>-->
@@ -60,7 +60,7 @@
                                 <td class='hidden-480'>
                                     <a href="#" class="btn" rel="tooltip" title="View"><i class="icon-search" ng-click="detailBook(<?php echo $book->id ?>)"></i></a>
                                     <a href="#" class="btn" rel="tooltip" title="Edit"><i class="icon-edit"></i></a>
-                                    <a href="#" class="btn" rel="tooltip" title="Delete"><i class="icon-remove"></i></a>
+                                    <a href="<?php echo Yii::app()->createUrl('book/DeleteForWeb?book_id='.$book->id)?>" class="btn" rel="tooltip" title="Delete"><i class="icon-remove" id="remove" onclick="if(!confirm('Are you sure ?? Cannot rollback !!!')){return false;}"></i></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -78,7 +78,10 @@
         $scope.detail = {};
         $scope.detailBook = function (id) {
             $("#modal-detail").modal("show");
+            $('#myModalLabel').hide();
+            $('#modal-body-detail').hide();
             $("#loading").show();
+            
 //         $("#modal-label").hide();
 //         $("#des").hide();
 //         $('#price').hide();
@@ -94,6 +97,8 @@
                 },
             }).success(function (response) {
                 $("#loading").hide();
+                $('#myModalLabel').show();
+                $('#modal-body-detail').show();
 //             $("#modal-label").show();
 //             $("#des").show();
 //             $('#price').show();
@@ -104,6 +109,7 @@
                 // console.log(response);
             });
         }
+        
 
 
 

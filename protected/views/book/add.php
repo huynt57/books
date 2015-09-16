@@ -2,11 +2,11 @@
     <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/loading.gif" style=" position: absolute;
          top: 0; bottom:0; left: 0; right:0;
          margin: auto;" id="loading"/>
-    <div class="modal-header">
+    <div class="modal-header-add">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">{{detail.book_name}}</h3>
+        
     </div>
-    <form action="#" method="POST" class='form-horizontal form-bordered' id="form-add" enctype="multipart/form-data">
+    <form action="<?php echo Yii::app()->createUrl('book/AddForWeb')?>" method="POST" class='form-horizontal form-bordered' id="form-add" enctype="multipart/form-data">
         <div class="modal-body" style="max-height: 100%; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px">
             <div class="box box-bordered">
                 <div class="box-title">
@@ -14,12 +14,7 @@
                 </div>
                 <div class="box-content nopadding">
 
-                    <div class="control-group">
-                        <label for="book_id" class="control-label">ID</label>
-                        <div class="controls">
-                            <input type="text" name="book_id" id="book_id" class="input-xlarge" >
-                        </div>
-                    </div>
+                    
                     <div class="control-group">
                         <label for="book_name" class="control-label">Name</label>
                         <div class="controls">
@@ -29,7 +24,6 @@
                     <div class="control-group">
                         <label for="book_image" class="control-label">Image</label>
                         <div class="controls">
-                            <img src="{{detail.book_image}}" height="100" width="100">
                            <input type="file" name="book_image" id="book_image" class="input-block-level">
                         </div>
                     </div>

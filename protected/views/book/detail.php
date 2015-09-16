@@ -7,7 +7,7 @@
         <h3 id="myModalLabel">{{detail.book_name}}</h3>
     </div>
     <form action="<?php echo Yii::app()->createAbsoluteUrl('book/edit') ?>" method="POST" class='form-horizontal form-bordered' id="form-change" enctype="multipart/form-data">
-        <div class="modal-body" style="max-height: 100%; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px">
+        <div class="modal-body" style="max-height: 100%; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px" id="modal-body-detail">
             <div class="box box-bordered">
                 <div class="box-title">
                     <h3><i class="icon-th-list"></i>Information</h3>
@@ -29,7 +29,7 @@
                     <div class="control-group">
                         <label for="book_image" class="control-label">Image</label>
                         <div class="controls">
-                            <img src="{{detail.book_image}}" height="100" width="100">
+                            <img src="<?php echo Yii::app()->BaseUrl.'/'?>{{detail.book_image}}" height="100" width="100">
                             <input type="file" name="book_image" id="book_image" class="input-xlarge">
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                     <div class="control-group">
                         <label for="book_description" class="control-label">Description</label>
                         <div class="controls">
-                            <textarea name="book_description" id="textarea" rows="4" class="input-block-level" >{{detail.description}}</textarea>
+                            <textarea name="book_description" id="textarea" rows="4" class="input-block-level" >{{detail.book_description}}</textarea>
                         </div>
                     </div>
 

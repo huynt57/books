@@ -7,6 +7,32 @@ class BookController extends Controller {
         $this->render('index', array('books' => $data));
     }
 
+    /**
+     * @api {post} book/add Add A Book
+     * @apiName Add Book
+     * @apiGroup Book
+     *
+     * @apiParam {String} book_name Book Name.
+     * @apiParam {String} book_author Book Author.
+     * @apiParam {Number} book_year Book Year.
+     * @apiParam {String} book_publisher Book Publisher.
+     * @apiParam {String} book_description Book Description.
+     * @apiParam {String} book_image Book Image.
+     *
+     * @apiSuccess {String} status Status of request. 1 if success and 0 for not.
+     * @apiSuccess {String} data  Response data of request.
+     * @apiSuccess {String} message  Message.
+     *
+     * @apiSuccessExample Success-Response:
+     *     HTTP/1.1 200 OK
+     *     {
+     *       "status": 1,
+     *       "data": [],
+     *       "message":Success
+     *     }
+     *
+     * 
+     */
     public function actionAdd() {
         $request = Yii::app()->request;
         try {

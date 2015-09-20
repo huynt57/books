@@ -126,6 +126,21 @@ class BookController extends Controller {
             var_dump($ex->getMessage());
         }
     }
+    
+    public function actionDelete2() {
+        $request = Yii::app()->request;
+        try {
+            $book_id = $request->getDelete('book_id');
+            $model = Books::model()->findByAttributes(array('id' => $book_id));
+            if ($model->delete()) {
+                ResponseHelper::JsonReturnSuccess("", "Success");
+            } else {
+                ResponseHelper::JsonReturnError("", "Server Error");
+            }
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
 
     public function actionDeleteForWeb() {
         $request = Yii::app()->request;

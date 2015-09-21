@@ -10,7 +10,7 @@ class UploadHelper {
 
     public static function getUrlUpload($obj) {
         $ext_arr = array('png', 'jpg', 'jpeg', 'bmp');
-        $name = StringHelper::filterString($obj['name']);
+        $name = time().StringHelper::filterString($obj['name']);
         $storeFolder = Yii::getPathOfAlias('webroot') . '/uploads/';
         $tempFile = $obj['tmp_name'];
         $targetFile = $storeFolder . $name;

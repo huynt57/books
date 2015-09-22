@@ -205,6 +205,7 @@ class BookController extends Controller {
             $offset = $request->getQuery('offset');
             $data = Books::model()->searchBooks($query, $limit, $offset);
             ResponseHelper::JsonReturnSuccess($data, "Success");
+            
         } catch (Exception $ex) {
             var_dump($ex->getMessage());
         }

@@ -44,7 +44,7 @@ class Books extends BaseBooks {
         }
     }
 
-    public function updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description) {
+    public function updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description, $book_status) {
         $model = Books::model()->findByAttributes(array('id' => $book_id));
         if ($model) {
             if (!empty($book_name)) {
@@ -64,6 +64,9 @@ class Books extends BaseBooks {
             }
             if (!empty($book_description)) {
                 $model->book_description = $book_description;
+            }
+            if (!empty($book_status)) {
+                $model->status = $book_status;
             }
             $model->updated_at = time();
             if ($model->save()) {

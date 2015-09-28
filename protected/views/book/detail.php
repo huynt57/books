@@ -7,7 +7,7 @@
         <h3 id="myModalLabel">{{detail.book_name}}</h3>
     </div>
     <form action="<?php echo Yii::app()->createAbsoluteUrl('book/edit') ?>" method="POST" class='form-horizontal form-bordered' id="form-change" enctype="multipart/form-data">
-        <div class="modal-body" style="max-height: 100%; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px" id="modal-body-detail">
+        <div class="modal-body" style="/*max-height: 100%;*/ padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px" id="modal-body-detail">
             <div class="box box-bordered">
                 <div class="box-title">
                     <h3><i class="icon-th-list"></i>Information</h3>

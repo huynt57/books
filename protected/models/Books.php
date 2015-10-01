@@ -69,7 +69,7 @@ class Books extends BaseBooks {
                 $model->status = $book_status;
             }
             $model->updated_at = time();
-            if ($model->save()) {
+            if ($model->save(FALSE)) {
                 return TRUE;
             } else {
                 return FALSE;

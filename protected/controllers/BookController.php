@@ -99,11 +99,12 @@ class BookController extends Controller {
             $book_year = StringHelper::filterString($request->getPut('book_year'));
             $book_publisher = StringHelper::filterString($request->getPut('book_publisher'));
             $book_description = StringHelper::filterString($request->getPut('book_description'));
+            $book_status = StringHelper::filterString($request->getPut('status'));
             $book_image = NULL;
             if (isset($_FILES['book_image'])) {
                 $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
             }
-            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
+            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description, $book_status)) {
                 ResponseHelper::JsonReturnSuccess("", "Success");
             } else {
                 ResponseHelper::JsonReturnError("", "Server Error");

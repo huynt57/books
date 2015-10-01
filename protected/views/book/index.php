@@ -16,7 +16,7 @@
         <?php endif; ?>
         <div class="box box-color box-bordered">
 
-            <a href="#modal-add" role="button" data-toggle="modal" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px">Add book</a>
+<!--            <a href="#modal-add" role="button" data-toggle="modal" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px">Add book</a>-->
             <div class="box-content nopadding" ng-app="" ng-controller="BookController">
 
                 <table class="table table-hover table-nomargin table-bordered dataTable">
@@ -27,12 +27,12 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Image</th>
-<!--                            <th>Author</th>
+                            <th>Author</th>
                             <th>Publisher</th>
-                            <th>Year</th>-->
+                            <th>Year</th>
                             <th>Description</th>
                             <th>Status</th>
-                            <th>Action</th>
+<!--                            <th>Action</th>-->
                         </tr>
 <!--                        <tr>
                             <th class='with-checkbox'><input type="checkbox" name="check_all" id="check_all"></th>
@@ -55,10 +55,15 @@
                                 </td>-->
                                 <td><?php echo $book->id ?></td>
                                 <td><?php echo $book->book_name ?></td>
-                                <td><img src="<?php echo Yii::app()->BaseUrl . '/' . $book->book_image ?>" height="100" width="100" /></td>
-    <!--                                <td><?php //echo $book->book_author       ?></td>
-                                <td><?php //echo $book->book_publisher       ?></td>
-                                <td><?php //echo $book->book_year       ?></td>-->
+                                <?php if (strpos($book->book_image, 'http') !== false): ?>
+                                    <td><img src="<?php echo $book->book_image ?>" height="150" width="120" /></td>
+                                <?php elseif (strpos($book->book_image, 'http') == false): ?>
+                                    <td><img src="<?php echo Yii::app()->BaseUrl . '/' . $book->book_image ?>" height="150" width="120" /></td>
+                                <?php endif; ?>
+                                    <td><?php echo $book->book_author ?></td>
+                                    <td><?php echo $book->book_publisher ?></td>
+                                    <td><?php echo $book->book_year ?></td>
+
                                 <td><?php echo $book->book_description ?></td>
                                 <td class='hidden-350'>
                                     <?php if ($book->status == 1): ?>
@@ -70,13 +75,13 @@
                                         </span>
                                     <?php endif; ?>
                                 </td>
-                                <td class='hidden-480'>
+<!--                                <td class='hidden-480'>
                                     <a href="#" class="btn" rel="tooltip" title="View"><i class="icon-search" ng-click="detailBook(<?php echo $book->id ?>)"></i></a>
-<!--                                    <a href="#" class="btn" rel="tooltip" title="Edit"><i class="icon-edit"></i></a>-->
+                                        <a href="#" class="btn" rel="tooltip" title="Edit"><i class="icon-edit"></i></a>
                                     <a href="<?php echo Yii::app()->createUrl('book/DeleteForWeb?book_id=' . $book->id) ?>" class="btn" rel="tooltip" title="Delete"><i class="icon-remove" id="remove" onclick="if (!confirm('Are you sure ?? Cannot rollback !!!')) {
-                                                                return false;
-                                                            }"></i></a>
-                                </td>
+                                                                    return false;
+                                                                }"></i></a>
+                                </td>-->
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

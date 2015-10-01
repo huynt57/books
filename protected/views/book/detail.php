@@ -29,7 +29,13 @@
                     <div class="control-group">
                         <label for="book_image" class="control-label">Image</label>
                         <div class="controls">
-                            <img src="<?php echo Yii::app()->BaseUrl.'/'?>{{detail.book_image}}" height="100" width="100">
+                            <div ng-if="detail.book_image.indexOf('http') > -1">
+                                <img src="{{detail.book_image}}" height="100" width="100">
+                            </div>
+                            <div ng-if="detail.book_image.indexOf('http') === -1">
+                                <img src="<?php echo Yii::app()->BaseUrl . '/' ?>{{detail.book_image}}" height="100" width="100">
+                            </div>
+
                             <input type="file" name="book_image" id="book_image" class="input-xlarge">
                         </div>
                     </div>

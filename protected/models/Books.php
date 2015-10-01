@@ -12,7 +12,7 @@ class Books extends BaseBooks {
     {
         $criteria = new CDbCriteria;
         $criteria->select = "*";
-        $criteria->order = "id ASC";        
+        $criteria->order = "id DESC";        
         $data = Books::model()->findAll($criteria);
         return $data;
     }

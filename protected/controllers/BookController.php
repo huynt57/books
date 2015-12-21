@@ -137,6 +137,29 @@ class BookController extends Controller {
             var_dump($ex->getMessage());
         }
     }
+    
+    public function actionUpdateWithPost() {
+        $request = Yii::app()->request;
+        try {
+            $book_id = StringHelper::filterString($request->getPost('book_id'));
+            $book_name = StringHelper::filterString($request->getPost('book_name'));
+            $book_author = StringHelper::filterString($request->getPost('book_author'));
+            $book_year = StringHelper::filterString($request->getPost('book_year'));
+            $book_publisher = StringHelper::filterString($request->getPost('book_publisher'));
+            $book_description = StringHelper::filterString($request->getPost('book_description'));
+            $book_image = NULL;
+            if (isset($_FILES['book_image'])) {
+                $book_image = UploadHelper::getUrlUpload($_FILES['book_image']);
+            }
+            if (Books::model()->updateBook($book_id, $book_name, $book_author, $book_year, $book_publisher, $book_image, $book_description)) {
+                ResponseHelper::JsonReturnSuccess("", "Success");
+            } else {
+                ResponseHelper::JsonReturnError("", "Server Error");
+            }
+        } catch (Exception $ex) {
+            var_dump($ex->getMessage());
+        }
+    }
 
     public function actionDelete() {
         $request = Yii::app()->request;
@@ -153,10 +176,11 @@ class BookController extends Controller {
         }
     }
     
+    
     public function actionDelete2() {
         $request = Yii::app()->request;
         try {
-            $book_id = $request->getDelete('book_id');
+            $book_id = $request->getPost('book_id');
             $model = Books::model()->findByAttributes(array('id' => $book_id));
             if ($model->delete()) {
                 ResponseHelper::JsonReturnSuccess("", "Success");

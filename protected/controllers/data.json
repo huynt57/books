@@ -1,0 +1,461 @@
+{
+  "Books": [
+    {
+      "ID": 3128687534,
+      "Title": "PHP and MySQL For Dummies, 4th Edition",
+      "Description": "To be on the cutting edge, Web sites need to serve up HTML, CSS, and products specific to the needs of different customers using different browsers. An effective e-commerce site gathers information about users and provides information they need to ge ...",
+      "Image": "http://s.it-ebooks-api.info/9/php_and_mysql_for_dummies_4th_edition.jpg",
+      "isbn": "9780470527580"
+    },
+    {
+      "ID": 1712153699,
+      "Title": "Beginning PHP and MySQL E-Commerce, 2nd Edition",
+      "SubTitle": "From Novice to Professional",
+      "Description": "Beginning PHP and MySQL E-Commerce: From Novice to Professional, Second Edition covers every step of the design and building process involved in creating powerful, extendable e-commerce web sites. Based around a real-world example involving a web sit ...",
+      "Image": "http://s.it-ebooks-api.info/6/beginning_php_and_mysql_e-commerce_2nd_edition.jpg",
+      "isbn": "9781590598641"
+    },
+    {
+      "ID": 2191501858,
+      "Title": "PHP and MySQL Web Development, 4th Edition",
+      "Description": "PHP and MySQL are popular open-source technologies that are ideal for quickly developing database-driven Web applications. PHP is a powerful scripting language designed to enable developers to create highly featured Web applications quickly, and MySQ ...",
+      "Image": "http://s.it-ebooks-api.info/10/php_and_mysql_web_development_4th_edition.jpg",
+      "isbn": "9780672329166"
+    },
+    {
+      "ID": 4126030247,
+      "Title": "Expert PHP and MySQL",
+      "Description": "As the world's most popular, general purpose, open source scripting language, PHP is frequently used with MySQL to create high-traffic, mission-critical applications. This indispensable book shares proven, author-tested best practices and expert tech ...",
+      "Image": "http://s.it-ebooks-api.info/2/expert_php_and_mysql.jpg",
+      "isbn": "9780470563120"
+    },
+    {
+      "ID": 2725483026,
+      "Title": "Beginning PHP 6, Apache, MySQL 6 Web Development",
+      "Description": "Apache, MySQL and PHP are each complex in and of themselves, and it's impossible for this book to cover every advanced detail of all three. The purpose of this book is to give you the best possible foundation for understanding how each of the core co ...",
+      "Image": "http://s.it-ebooks-api.info/2/beginning_php_6_apache_mysql_6_web_development.jpg",
+      "isbn": "9780470391143"
+    },
+    {
+      "ID": 869476162,
+      "Title": "PHP and MySQL For Dummies, 3rd Edition",
+      "Description": "Been thinking of creating a high-quality interactive Web site? This book is just what you need to get started! Here's the fun and easy way(r) to develop a Web application in PHP 4, 5, or 6 and MySQL 5, test your software, enable your Web pages to dis ...",
+      "Image": "http://s.it-ebooks-api.info/9/php_and_mysql_for_dummies_3rd_edition.jpg",
+      "isbn": "9780470096000"
+    },
+    {
+      "ID": 1096327173,
+      "Title": "PHP 6 and MySQL 6 Bible",
+      "Description": "MySQL is the leading open source database on the market and PHP continues to dominate the server side of the scripting market - together, they are the most popular and common team for creating dynamic, database-driven web sites. This comprehensive bo ...",
+      "Image": "http://s.it-ebooks-api.info/9/php_6_and_mysql_6_bible.jpg",
+      "isbn": "9780470384503"
+    },
+    {
+      "ID": 3775254278,
+      "Title": "Expert PHP and MySQL",
+      "SubTitle": "Application Design and Development",
+      "Description": "Expert PHP and MySQL takes you beyond learning syntax to showing you how to apply proven software development methods to building commerce-grade PHP and MySQL projects that will stand the test of time and reliably deliver on customer needs.\n\nDevelo ...",
+      "Image": "http://s.it-ebooks-api.info/6/expert_php_and_mysql.jpg",
+      "isbn": "9781430260073"
+    },
+    {
+      "ID": 4199565506,
+      "Title": "Practical PHP and MySQL Website Databases",
+      "SubTitle": "A Simplified Approach",
+      "Description": "Practical PHP and MySQL Website Databases is a project-oriented book that demystifies building interactive, database-driven websites. The focus is on getting you up and running as quickly as possible. In the first two chapters you will set up your de ...",
+      "Image": "http://s.it-ebooks-api.info/6/practical_php_and_mysql_website_databases.jpg",
+      "isbn": "9781430260769"
+    },
+    {
+      "ID": 3426521078,
+      "Title": "PHP: The Good Parts",
+      "SubTitle": "Delivering the Best of PHP",
+      "Description": "Get past all the hype about PHP and dig into the real power of the language. This book explores the most useful features of PHP and how they can speed up the web development process, and explains why the most commonly used PHP elements are often misu ...",
+      "Image": "http://s.it-ebooks-api.info/3/php_the_good_parts.jpg",
+      "isbn": "9780596804374"
+    },
+{
+      "ID": 1528037690,
+      "Title": "Learning PHP & MySQL, 2nd Edition",
+      "SubTitle": "Step-by-Step Guide to Creating Database-Driven Web Sites",
+      "Description": "PHP and MySQL are quickly becoming the de facto standard for rapid development of dynamic, database-driven web sites. This book is perfect for newcomers to programming as well as hobbyists who are intimidated by harder-to-follow books. With concepts ...",
+      "Image": "http://s.it-ebooks-api.info/3/learning_php__mysql_2nd_edition.jpg",
+      "isbn": "9780596514013"
+    },
+    {
+      "ID": 4211610545,
+      "Title": "PHP & MySQL: The Missing Manual, 2nd Edition",
+      "SubTitle": "The book that should have been in the box",
+      "Description": "If you can build websites with CSS and JavaScript, this book takes you to the next level - creating dynamic, database-driven websites with PHP and MySQL. Learn how to build a database, manage your content, and interact with users. With step-by-step t ...",
+      "Image": "http://s.it-ebooks-api.info/3/php__mysql_the_missing_manual_2nd_edition.jpg",
+      "isbn": "9781449325572"
+    },
+    {
+      "ID": 1752360057,
+      "Title": "PHP & MySQL Web Development All-in-One Desk Reference For Dummies",
+      "Description": "PHP &amp; MySQL Web Development All-in-One Desk Reference For Dummies is kind of one-stop shopping for the information you need to get up and running with these tools and put them to good use. It's divided into six handy minibooks that cover setting ...",
+      "Image": "http://s.it-ebooks-api.info/9/php__mysql_web_development_all-in-one_desk_reference_for_dummies.jpg",
+      "isbn": "9780470167779"
+    },
+    {
+      "ID": 4152346111,
+      "Title": "PHP, MySQL, JavaScript & HTML5 All-in-One For Dummies",
+      "Description": "PHP, JavaScript, and HTML5 are essential programming languages for creating dynamic websites that work with the MySQL database. PHP and MySQL provide a robust, easy-to-learn, open-source solution for creating superb e-commerce sites and content manag ...",
+      "Image": "http://s.it-ebooks-api.info/9/php_mysql_javascript__html5_all-in-one_for_dummies.jpg",
+      "isbn": "9781118213704"
+    },
+    {
+      "ID": 3025675117,
+      "Title": "Practical Web 2.0 Applications with PHP",
+      "Description": "In Practical Web 2.0 Applications with PHP, PHP, MySQL, CSS, XHTML, and JavaScript / Ajax development techniques are brought together to show you how to create the hottest PHP web applications, from planning and design up to final implementation, wit ...",
+      "Image": "http://s.it-ebooks-api.info/6/practical_web_2.0_applications_with_php.jpg",
+      "isbn": "9781590599068"
+    },
+    {
+      "ID": 42310803,
+      "Title": "Head First jQuery",
+      "Description": "Want to add more interactivity and polish to your websites? Discover how jQuery can help you build complex scripting functionality in just a few lines of code. With Head First jQuery, you'll quickly get up to speed on this amazing JavaScript library ...",
+      "Image": "http://s.it-ebooks-api.info/3/head_first_jquery.jpg",
+      "isbn": "9781449393212"
+    },
+    {
+      "ID": 2699916809,
+      "Title": "Drupal 6 Themes",
+      "SubTitle": "Create new themes for your Drupal 6 site with clean layout and powerful CSS styling",
+      "Description": "Drupal is an award winning open source Content Management System (CMS). Based on PHP/MySQL, its power and flexibility combined with its exceptional design mean it is one of the most popular choices for creating a CMS website.\n\nDrupal employs a spec ...",
+      "Image": "http://s.it-ebooks-api.info/14/drupal_6_themes.jpg",
+      "isbn": "9781847195661"
+    },
+    {
+      "ID": 533749522,
+      "Title": "Implementing SugarCRM",
+      "SubTitle": "Introduce the leading Open Source CRM application into your small/mid-size business with this systematic, practical guide",
+      "Description": "SugarCRM is a popular customer relationship management system. It is available in both free open source and commercial versions, making it an ideal way for small-medium business to try out a CRM system without committing large sums of money. Although ...",
+      "Image": "http://s.it-ebooks-api.info/14/implementing_sugarcrm.jpg",
+      "isbn": "9781904811688"
+    },
+    {
+      "ID": 3398759608,
+      "Title": "MySQL Stored Procedure Programming",
+      "SubTitle": "Building High-Performance Web Applications in MySQL",
+      "Description": "MySQL Stored Procedure Programming covers a lot of ground. The book starts with a thorough introduction to stored procedures programming and functions, covering the fundamentals of data types, operators, and using SQL in stored procedures. You'll lea ...",
+      "Image": "http://s.it-ebooks-api.info/3/mysql_stored_procedure_programming.jpg",
+      "isbn": "9780596100896"
+    },
+    {
+      "ID": 3636763595,
+      "Title": "PHP and MySQL 24-Hour Trainer",
+      "Description": "Assuming no previous experience with PHP or MySQL, this book is ideal reading for anyone who wants to go beyond HTML / CSS in order to provide clients with the most dynamic web sites possible. The approachable tone breaks down the basics of programmi ...",
+      "Image": "http://s.it-ebooks-api.info/2/php_and_mysql_24-hour_trainer.jpg",
+      "isbn": "9781118066881"
+    },
+    {
+      "ID": 444511141,
+      "Title": "Crafting Rails 4 Applications, 2nd Edition",
+      "SubTitle": "Expert Practices for Everyday Rails Development",
+      "Description": "Get ready to see Rails as you've never seen it before. Learn how to extend the framework, change its behavior, and replace whole components to bend it to your will. Eight different test-driven tutorials will help you understand Rails' inner workings ...",
+      "Image": "http://s.it-ebooks-api.info/1/crafting_rails_4_applications_2nd_edition.jpg",
+      "isbn": "9781937785550"
+    },
+    {
+      "ID": 2456788757,
+      "Title": "Rails Deep Dive",
+      "SubTitle": "Build Rails Application from Scratch",
+      "Description": "This book will guide you in creating a Rails application. It will focus on setting your system up properly and will fly a little lower than the typical 50,000 foot level of many tutorials.\n\nWhile Rails is often touted as a good web development fram ...",
+      "Image": "http://s.it-ebooks-api.info/7/rails_deep_dive.jpg",
+      "isbn": "9780987247896"
+    },
+    {
+      "ID": 1849506497,
+      "Title": "Bootstrap for Rails",
+      "SubTitle": "A quick-start guide to developing beautiful web applications with the Bootstrap toolkit and Rails framework",
+      "Description": "Bootstrap is a free, open source CSS and JS framework that helps you create websites in minutes, and Ruby on Rails, or Rails as it's known, is an open source web application framework written in the Ruby programming language. Bootstrap is typically u ...",
+      "Image": "http://s.it-ebooks-api.info/14/bootstrap_for_rails.jpg",
+      "isbn": "9781783987269"
+    },
+    {
+      "ID": 331265842,
+      "Title": "Rails Crash Course",
+      "SubTitle": "A No-Nonsense Guide to Rails Development",
+      "Description": "Rails is a robust, flexible development platform that lets you build complex websites quickly. Major websites like GitHub, Hulu, and Twitter have run Rails under the hood, and if you know just enough HTML and CSS to be dangerous, Rails Crash Course w ...",
+      "Image": "http://s.it-ebooks-api.info/15/rails_crash_course.jpg",
+      "isbn": "9781593275723"
+    },
+    {
+      "ID": 2069212718,
+      "Title": "Agile Web Development with Rails, 3rd Edition",
+      "Description": "Rails just keeps on changing. Rails 3 and Ruby 1.9 bring hundreds of improvements, including new APIs and substantial performance enhancements. The fourth edition of this award-winning classic has been reorganized and refocused so it's more useful th ...",
+      "Image": "http://s.it-ebooks-api.info/1/agile_web_development_with_rails_3rd_edition.jpg",
+      "isbn": "9781934356166"
+    },
+    {
+      "ID": 3424641975,
+      "Title": "Agile Web Development with Rails, 4th Edition",
+      "Description": "Rails just keeps on changing. Rails 3 and Ruby 1.9 bring hundreds of improvements, including new APIs and substantial performance enhancements. The fourth edition of this award-winning classic has been reorganized and refocused so it's more useful th ...",
+      "Image": "http://s.it-ebooks-api.info/1/agile_web_development_with_rails_4th_edition.jpg",
+      "isbn": "9781934356548"
+    },
+    {
+      "ID": 1265196956,
+      "Title": "Enterprise Recipes with Ruby and Rails",
+      "Description": "Every web site project is really an enterprise integration project in disguise. Ruby on Rails makes it easier than ever to create complex and good-looking web sites, but there's plenty of life beyond the rails. The 50+ recipes in this book not only s ...",
+      "Image": "http://s.it-ebooks-api.info/1/enterprise_recipes_with_ruby_and_rails.jpg",
+      "isbn": "9781934356234"
+    },
+    {
+      "ID": 3071691901,
+      "Title": "Rails for .NET Developers",
+      "Description": "Rails for .NET Developers introduces the joy of Ruby on Rails development to Microsoft .NET developers. This book demonstrates the essential elements of both the Ruby language and the Rails application framework, geared especially for developers alre ...",
+      "Image": "http://s.it-ebooks-api.info/1/rails_for_.net_developers.jpg",
+      "isbn": "9781934356203"
+    },
+    {
+      "ID": 3040081879,
+      "Title": "Rails for PHP Developers",
+      "Description": "Are you a PHP developer interested in the Ruby on Rails framework? Rails for PHP Developers kick-starts your Rails experience by guiding you through learning both Ruby and Rails from a PHP developer's perspective. Written by developers with deep expe ...",
+      "Image": "http://s.it-ebooks-api.info/1/rails_for_php_developers.jpg",
+      "isbn": "9781934356043"
+    },
+    {
+      "ID": 3237468075,
+      "Title": "Rails Recipes",
+      "Description": "You've read the tutorials and watched the online videos. You have a strong grasp of all of the ingredients that make up a successful Rails application. But ingredients don't just turn themselves into a meal. Chad Fowler's Rails Recipes is a collectio ...",
+      "Image": "http://s.it-ebooks-api.info/1/rails_recipes.jpg",
+      "isbn": "9780977616602"
+    },
+    {
+      "ID": 2163100151,
+      "Title": "Android Native Development Kit Cookbook",
+      "SubTitle": "A step-by-step tutorial with more than 60 concise recipes on Android NDK development skills",
+      "Description": "Building Android applications would usually mean that you spend all of your time working in Java. There are however times when this is not the most efficient or best method for the application being built. This is where Android NDK comes in. Android ...",
+      "Image": "http://s.it-ebooks-api.info/14/android_native_development_kit_cookbook.jpg",
+      "isbn": "9781849691505"
+    },
+    {
+      "ID": 3516509712,
+      "Title": "Android Developer Tools Essentials",
+      "SubTitle": "Android Studio to Zipalign",
+      "Description": "Android development can be challenging, but through the effective use of Android Developer Tools (ADT), you can make the process easier and improve the quality of your code. This concise guide demonstrates how to build apps with ADT for a device fami ...",
+      "Image": "http://s.it-ebooks-api.info/3/android_developer_tools_essentials.jpg",
+      "isbn": "9781449328214"
+    },
+    {
+      "ID": 2962989626,
+      "Title": "Android Studio Application Development",
+      "SubTitle": "Create visually appealing applications using the new IntelliJ IDE Android Studio",
+      "Description": "Mobile apps have become extremely popular over the last few years and offer a great opportunity for developers. Android is now one of the most popular mobile systems in the world. The new Android Studio IDE has introduced a specialized development en ...",
+      "Image": "http://s.it-ebooks-api.info/14/android_studio_application_development.jpg",
+      "isbn": "9781783285273"
+    },
+    {
+      "ID": 19687152,
+      "Title": "Learning Pentesting for Android Devices",
+      "SubTitle": "A practical guide to learning penetration testing for Android devices and applications",
+      "Description": "Android is the most popular mobile smartphone operating system at present, with over a million applications. Every day hundreds of applications are published to the PlayStore, which users from all over the world download and use. Often, these applica ...",
+      "Image": "http://s.it-ebooks-api.info/14/learning_pentesting_for_android_devices.jpg",
+      "isbn": "9781783288984"
+    },
+    {
+      "ID": 2482112600,
+      "Title": "Enterprise Android",
+      "SubTitle": "Programming Android Database Applications for the Enterprise",
+      "Description": "Android devices have moved beyond consumer applications into corporate and enterprise use. If you are eager to start building data-driven Android applications that integrate with enterprise systems, this book shows you how. The authors thoroughly exp ...",
+      "Image": "http://s.it-ebooks-api.info/2/enterprise_android.jpg",
+      "isbn": "9781118183496"
+    },
+    {
+      "ID": 2133117169,
+      "Title": "Android Application Programming with OpenCV",
+      "SubTitle": "Build Android apps to capture, manipulate, and track objects in 2D and 3D",
+      "Description": "Take a smartphone from your pocket, and within a few seconds, you can snap a photo, manipulate it, and share it with the world. You have just achieved mass production of image data. With a computer vision library such as OpenCV, you can analyze and t ...",
+      "Image": "http://s.it-ebooks-api.info/14/android_application_programming_with_opencv.jpg",
+      "isbn": "9781849695206"
+    },
+    {
+      "ID": 3794947235,
+      "Title": "Xamarin Mobile Application Development for Android",
+      "SubTitle": "Learn to develop full featured Android apps using your existing C# skills with Xamarin.Android",
+      "Description": "Technology trends come and go, but few have generated the excitement, momentum, or long-term impact that mobile computing has. Mobile computing impacts people's lives at work and at home on a daily basis. Many companies and individual developers are ...",
+      "Image": "http://s.it-ebooks-api.info/14/xamarin_mobile_application_development_for_android.jpg",
+      "isbn": "9781783559169"
+    },
+    {
+      "ID": 194309797,
+      "Title": "Introduction to Android Application Development, 4th Edition",
+      "SubTitle": "Android Essentials",
+      "Description": "This fully reworked edition of a proven title is the most useful real-world guide to building robust, commercial-grade Android™ apps. The content is revised and updated for the latest Android 4.3 SDK and the newest development best practices. Intro ...",
+      "Image": "http://s.it-ebooks-api.info/10/introduction_to_android_application_development_4th_edition.jpg",
+      "isbn": "9780321940261"
+    },
+    {
+      "ID": 1546750874,
+      "Title": "The Android Developer's Cookbook, 2nd Edition",
+      "SubTitle": "Building Applications with the Android SDK",
+      "Description": "This edition has been extensively updated to reflect the other Android 4.2.2 releases. You'll find all-new chapters on advanced threading and UI development, in-app billing, push messages, and native development, plus new techniques for everything fr ...",
+      "Image": "http://s.it-ebooks-api.info/10/the_android_developers_cookbook_2nd_edition.jpg",
+      "isbn": "9780321897534"
+    },
+    {
+      "ID": 2560978744,
+      "Title": "Android Security Internals",
+      "SubTitle": "An In-Depth Guide to Android's Security Architecture",
+      "Description": "There are more than one billion Android devices in use today, each one a potential target. Unfortunately, many fundamental Android security features have been little more than a black box to all but the most elite security professionals - until now. ...",
+      "Image": "http://s.it-ebooks-api.info/15/android_security_internals.jpg",
+      "isbn": "9781593275815"
+    },
+ {
+      "ID": 1286681435,
+      "Title": "HTML5 Game Programming with enchant.js",
+      "Description": "HTML5 Game Programming with enchant.js gives first-time programmers of all ages the tools to turn their video game ideas into reality. A step-by-step guide to the free, open-source HTML5 and JavaScript engine enchant.js, it is ideally suited for game ...",
+      "Image": "http://s.it-ebooks-api.info/6/html5_game_programming_with_enchant.js.jpg",
+      "isbn": "9781430247432"
+    },
+    {
+      "ID": 2266698255,
+      "Title": "Building Impressive Presentations with impress.js",
+      "SubTitle": "Design stunning presentations with dynamic visuals and 3D transitions that will captivate your colleagues",
+      "Description": "Everyone has had to present during their lifetime. We've all spent agonizing hours trying to make those PowerPoint presentations engaging. Well now there is a tool that will make those presentations look like child's play.\n\nImpress.js is a powerful ...",
+      "Image": "http://s.it-ebooks-api.info/14/building_impressive_presentations_with_impress.js.jpg",
+      "isbn": "9781849696487"
+    },
+    {
+      "ID": 3286015299,
+      "Title": "Using Node.js for UI Testing",
+      "SubTitle": "Learn how to easily automate testing of your web apps using Node.js, Zombie.js, and Mocha",
+      "Description": "Automating tests for your user interfaces has always been the holy grail of programming. Now, using Zombie.js and Mocha you can create and quickly run your tests, allowing you to test even small changes. Increase your confidence in the code and minim ...",
+      "Image": "http://s.it-ebooks-api.info/14/using_node.js_for_ui_testing.jpg",
+      "isbn": "9781782160526"
+    },
+    {
+      "ID": 3748417925,
+      "Title": "Backbone.js Testing",
+      "SubTitle": "Plan, architect, and develop tests for Backbone.js applications using modern testing principles and practices",
+      "Description": "Frontend web applications are soaring in popularity and the Backbone.js library is leading this charge with a modular, lightweight approach for organizing JavaScript web applications. At the same time, testing client-side JavaScript and Backbone.js p ...",
+      "Image": "http://s.it-ebooks-api.info/14/backbone.js_testing.jpg",
+      "isbn": "9781782165248"
+    },
+    {
+      "ID": 541428686,
+      "Title": "Learning Three.js: The JavaScript 3D Library for WebGL",
+      "SubTitle": "Create and animate stunning 3D graphics using the open source Three.js JavaScript library",
+      "Description": "Three.js is a JavaScript 3D library that offers a wide range of features for creating and displaying stunning 3D computer graphics on a web browser in an intuitive manner using JavaScript without having to deal with the complexity of a WebGL low-leve ...",
+      "Image": "http://s.it-ebooks-api.info/14/learning_three.js_the_javascript_3d_library_for_webgl.jpg",
+      "isbn": "9781782166283"
+    },
+    {
+      "ID": 515927009,
+      "Title": "Beginning Backbone.js",
+      "Description": "Beginning Backbone.js is your step-by-step guide to learning and using the Backbone.js library in your web projects. Backbone.js is one of the most popular JavaScript libraries among web developers, used to create modular, single-page web apps. This ...",
+      "Image": "http://s.it-ebooks-api.info/6/beginning_backbone.js.jpg",
+      "isbn": "9781430263340"
+    },
+    {
+      "ID": 4166068935,
+      "Title": "Full Stack Web Development with Backbone.js",
+      "SubTitle": "Scalable Application Design with 100% JavaScript",
+      "Description": "Learn how to build a full-stack application with Backbone.js by taking advantage of JavaScript modules, workflow automation, and Backbone's interface building blocks. With this practical guide, author Patrick Mulder takes experienced backend develope ...",
+      "Image": "http://s.it-ebooks-api.info/3/full_stack_web_development_with_backbone.js.jpg",
+      "isbn": "9781449370985"
+    },
+    {
+      "ID": 846207196,
+      "Title": "Backbone.js Blueprints",
+      "SubTitle": "Understand Backbone.js pragmatically by building seven different applications from scratch",
+      "Description": "Backbone.js is an open source, JavaScript library that helps you to build sophisticated and structured web apps. It's important to have well-organized frontend code for easy maintenance and extendability. With the Backbone framework, you'll be able t ...",
+      "Image": "http://s.it-ebooks-api.info/14/backbone.js_blueprints.jpg",
+      "isbn": "9781783286997"
+    },
+    {
+      "ID": 1673360752,
+      "Title": "Building Web Apps with Ember.js",
+      "SubTitle": "Write Ambitious JavaScript",
+      "Description": "If you're a web developer interested in building scalable single-page applications—full-stack, browser-based apps that connect to a backend—this practical guide shows you how to use Ember.js, the popular JavaScript framework based on the model-vi ...",
+      "Image": "http://s.it-ebooks-api.info/3/building_web_apps_with_ember.js.jpg",
+      "isbn": "9781449370923"
+    },
+    {
+      "ID": 3720788068,
+      "Title": "Learning Node.js",
+      "SubTitle": "A Hands-On Guide to Building Web Applications in JavaScript",
+      "Description": "Node.js makes it far easier to create fast, compact, and reliable web/network applications and web servers, and is rapidly becoming indispensable to modern web developers.\n\nLearning Node.js brings together the knowledge and JavaScript code you need ...",
+      "Image": "http://s.it-ebooks-api.info/10/learning_node.js.jpg",
+      "isbn": "9780321910578"
+    },
+{
+      "ID": 2166292778,
+      "Title": "Professional ASP.NET MVC 1.0",
+      "Description": "This book begins with you working along as Scott Guthrie builds a complete ASP.NET MVC reference application. He begins NerdDinner by using the File->New Project menu command within Visual Studio to create a new ASP.NET MVC Application. You'll then i ...",
+      "Image": "http://s.it-ebooks-api.info/2/professional_asp.net_mvc_1.0.jpg",
+      "isbn": "9780470384619"
+    },
+    {
+      "ID": 3883477818,
+      "Title": "Office 2010: The Missing Manual",
+      "Description": "Whether you're new to Microsoft Office or have used it for years, this clear and friendly primer helps you be productive with Word, Outlook, Excel, PowerPoint, Access, and the rest of the Office apps from day one. Learn what's new in Office 2010 and ...",
+      "Image": "http://s.it-ebooks-api.info/3/office_2010_the_missing_manual.jpg",
+      "isbn": "9781449382407"
+    },
+    {
+      "ID": 3747715622,
+      "Title": "HTML5 Cookbook",
+      "SubTitle": "Solutions & Examples for HTML5 Developers",
+      "Description": "With scores of practical recipes you can use in your projects right away, this cookbook helps you gain hands-on experience with HTML5's versatile collection of elements. You get clear solutions for handling issues with everything from markup semantic ...",
+      "Image": "http://s.it-ebooks-api.info/3/html5_cookbook.jpg",
+      "isbn": "9781449396794"
+    },
+    {
+      "ID": 4281081454,
+      "Title": "RESTful .NET",
+      "SubTitle": "Build and Consume RESTful Web Services with .NET 3.5",
+      "Description": "RESTful .NET is the first book that teaches Windows developers to build RESTful web services using the latest Microsoft tools. Written by Windows Communication Foundation (WFC) expert Jon Flanders, this hands-on tutorial demonstrates how you can use ...",
+      "Image": "http://s.it-ebooks-api.info/3/restful_.net.jpg",
+      "isbn": "9780596519209"
+    },
+    {
+      "ID": 538448059,
+      "Title": "RESTful Java with JAX-RS",
+      "Description": "Learn how to design and develop distributed web services in Java using RESTful architectural principals and the JAX-RS specification in Java EE 6. With this hands-on reference, you'll focus on implementation rather than theory, and discover why the R ...",
+      "Image": "http://s.it-ebooks-api.info/3/restful_java_with_jax-rs.jpg",
+      "isbn": "9780596158040"
+    },
+    {
+      "ID": 1707991865,
+      "Title": "RESTful Web Services Cookbook",
+      "SubTitle": "Solutions for Improving Scalability and Simplicity",
+      "Description": "While the REST design philosophy has captured the imagination of web and enterprise developers alike, using this approach to develop real web services is no picnic. This cookbook includes more than 100 recipes to help you take advantage of REST, HTTP ...",
+      "Image": "http://s.it-ebooks-api.info/3/restful_web_services_cookbook.jpg",
+      "isbn": "9780596801687"
+    },
+    {
+      "ID": 3669509294,
+      "Title": "Learn Cocoa on the Mac",
+      "Description": "The Cocoa frameworks are some of the most powerful frameworks for creating native desktop applications available on any platform today, and Apple gives them away, along with the Xcode development environment, for free! However, for a first-time Mac d ...",
+      "Image": "http://s.it-ebooks-api.info/6/learn_cocoa_on_the_mac.jpg",
+      "isbn": "9781430218593"
+    },
+    {
+      "ID": 1529159300,
+      "Title": "Expert Oracle and Java Security",
+      "SubTitle": "Programming Secure Oracle Database Applications With Java",
+      "Description": "Expert Oracle and Java Security: Programming Secure Oracle Database Applications with Java provides resources that every Java and Oracle database application programmer needs to ensure that they have guarded the security of the data and identities en ...",
+      "Image": "http://s.it-ebooks-api.info/6/expert_oracle_and_java_security.jpg",
+      "isbn": "9781430238317"
+    },
+    {
+      "ID": 2959658406,
+      "Title": "Getting Started with Roo",
+      "SubTitle": "Rapid Application Development for Java and Spring",
+      "Description": "Spring Roo goes a step beyond the Spring Framework by bringing true Rapid Application Development to Java - just as Grails has done with Groovy. This concise introduction shows you how to build applications with Roo, using the framework's shell as an ...",
+      "Image": "http://s.it-ebooks-api.info/3/getting_started_with_roo.jpg",
+      "isbn": "9781449307905"
+    },
+    {
+      "ID": 3327885079,
+      "Title": "SOA Governance in Action",
+      "SubTitle": "REST and WS-* Architectures",
+      "Description": "SOA Governance in Action shows developers how to apply governance concepts and implementation practices to achieve success in SOA projects. You'll learn practical techniques like building a metadata repository using WSO2 Registry or a custom monitori ...",
+      "Image": "http://s.it-ebooks-api.info/5/soa_governance_in_action.jpg",
+      "isbn": "9781617290275"
+    }
+  ]
+}

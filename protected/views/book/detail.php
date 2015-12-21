@@ -7,7 +7,7 @@
         <h3 id="myModalLabel">{{detail.book_name}}</h3>
     </div>
     <form action="<?php echo Yii::app()->createAbsoluteUrl('book/edit') ?>" method="POST" class='form-horizontal form-bordered' id="form-change" enctype="multipart/form-data">
-        <div class="modal-body" style="max-height: 100%; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px" id="modal-body-detail">
+        <div class="modal-body" style="/*max-height: 100%;*/ padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px" id="modal-body-detail">
             <div class="box box-bordered">
                 <div class="box-title">
                     <h3><i class="icon-th-list"></i>Information</h3>
@@ -29,7 +29,13 @@
                     <div class="control-group">
                         <label for="book_image" class="control-label">Image</label>
                         <div class="controls">
-                            <img src="<?php echo Yii::app()->BaseUrl.'/'?>{{detail.book_image}}" height="100" width="100">
+                            <div ng-if="detail.book_image.indexOf('http') > -1">
+                                <img src="{{detail.book_image}}" height="100" width="100">
+                            </div>
+                            <div ng-if="detail.book_image.indexOf('http') === -1">
+                                <img src="<?php echo Yii::app()->BaseUrl . '/' ?>{{detail.book_image}}" height="100" width="100">
+                            </div>
+
                             <input type="file" name="book_image" id="book_image" class="input-xlarge">
                         </div>
                     </div>
